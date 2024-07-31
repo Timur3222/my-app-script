@@ -1,6 +1,6 @@
 "use strict";
 
-// window.APP_URL = "http://192.168.1.60:3000/";
+window.APP_URL = "http://192.168.1.38:3000/";
 // window.APP_KEY = "";
 // window.ONESIGNAL_APP_ID = "";
 
