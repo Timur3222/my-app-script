@@ -26,7 +26,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 async function onDeviceReady() {
   let app;
-  navigator.vibrate(60);
+  navigator.vibrate(40);
   try {
     const appUrl = await getAppUrl();
     app = await openApp(appUrl);
