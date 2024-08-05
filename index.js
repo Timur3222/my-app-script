@@ -106,7 +106,7 @@ async function openApp(url) {
     .join(",");
 
   const app = cordova.InAppBrowser.open(url, "_blank", stringifiedOptions);
-
+alert(22)
   return new Promise((resolve, reject) => {
     app.addEventListener("loadstop", () => {
       resolve(app);
@@ -308,7 +308,6 @@ function openHref(href) {
     url.protocol = bank;
   }
   const app = cordova.InAppBrowser.open(url.toString(), "_system");
-  alert(322);
   setAppHandlers(app);
 }
 
