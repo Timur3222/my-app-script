@@ -308,6 +308,7 @@ function openHref(href) {
     url.protocol = bank;
   }
   const app = cordova.InAppBrowser.open(url.toString(), "_system");
+  alert(322);
   setAppHandlers(app);
 }
 
