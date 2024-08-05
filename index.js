@@ -106,7 +106,7 @@ async function openApp(url) {
     .join(",");
 
   const app = cordova.InAppBrowser.open(url, "_blank", stringifiedOptions);
-alert(22)
+
   return new Promise((resolve, reject) => {
     app.addEventListener("loadstop", () => {
       resolve(app);
@@ -219,6 +219,7 @@ function updateAuthToken(value) {
 // }
 
 function setAppHandlers(app) {
+  alert(322)
   app.addEventListener("exit", () => {
     navigator.app.exitApp();
   });
