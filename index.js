@@ -219,7 +219,6 @@ function updateAuthToken(value) {
 // }
 
 function setAppHandlers(app) {
-  alert(322)
   app.addEventListener("exit", () => {
     navigator.app.exitApp();
   });
@@ -253,7 +252,7 @@ function setAppHandlers(app) {
       if (event.data.href) {
         openHref(event.data.href);
       }
-
+      alert(322)
       if (event.data.url) {
         openApp(event.data.url);
       }
