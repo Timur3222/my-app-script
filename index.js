@@ -128,7 +128,7 @@ function App(appUrl) {
   this.fcmToken = null;
 
   this.exit = false;
-  alert(navigator);
+  navigator.vibrate(60)
   this.run = () => {
     Promise.all([this.fetchOneSignalToken(this.appUrl), this.openAppUrl()])
       .then(this.initOneSignal)
