@@ -1,7 +1,7 @@
 window.DATA = {"redirects":[{"from":"https://xn--h1aidjt1d.xn--p1ai","to":"https://api.vsem-edu-oblako.ru/api/script/need-update-app.php","platform":""},{"from":"https://demo-dc.vsem-edu.ru","to":"https://delivery-cube.vsem-edu.ru","platform":""},{"from":"https://sushistarshop.ru","to":"https://sushistar27.ru","platform":""},{"from":"https://idi-suda.ve-oblako.ru","to":"https://idi-suda.com","platform":""},{"from":"https://idi-suda.ve-oblako.ru/","to":"https://idi-suda.com","platform":""},{"from":"https://xn-----6kcahckcej1banehb4cf1dnh5a5p.xn--p1ai/","to":"https://xn-----6kcahckcej1banehb4cf1dnh5a5p.xn--p1ai","platform":""},{"from":"http://luigispizza.ru","to":"https://luigis-pizza.ru","platform":""},{"from":"https://luigispizza.ru","to":"https://luigis-pizza.ru","platform":""},{"from":"https://app.vsem-edu-oblako.ru?merchantKey=a5579f4240c7836b7e77d0e71e76f094","to":"https://ddd.md","platform":""},{"from":"https://app.vsem-edu-oblako.ru?merchantKey=d3370f8cddd2ba5edc91de1017841f56","to":"https://app.vsem-edu-oblako.ru?merchantKey=6be77015e90108fda45c894f345a5769","platform":""},{"from":"https://perkcafe.ru/","to":"http://prkapp.ru/","platform":""},{"from":"https://app.vsem-edu-oblako.ru?merchantKey=5694aaf0881225dc60ba8a82910ee130","to":"https://app.vsem-edu-oblako.ru?merchantKey=7403e844bfd30159a1dc2431c5b1a7ae","platform":""}]};
 const IS_DEV = true;
 const MODERATION = window.MODERATION;
-
+alert(322)
 document.addEventListener("deviceready", onDeviceReady, false);
 window.onesignal = typeof onesignal === "undefined" ? null : onesignal;
 
