@@ -255,7 +255,6 @@ function setAppHandlers(app) {
       }
 
       if (event.data.url) {
-        alert(2)
         openApp(event.data.url);
       }
 
