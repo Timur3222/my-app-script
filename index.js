@@ -250,10 +250,12 @@ function setAppHandlers(app) {
       }
 
       if (event.data.href) {
+        alert(1)
         openHref(event.data.href);
       }
-      alert(322)
+
       if (event.data.url) {
+        alert(2)
         openApp(event.data.url);
       }
 
