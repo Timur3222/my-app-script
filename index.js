@@ -374,7 +374,7 @@ function App(appUrl) {
 
   this.handleAppMessage = (message) => {
     const messageData = message.data.data;
-alert(messageData.url)
+
     switch (message.data.type) {
       case "payment":
         this.paymentInit(messageData.request);
