@@ -65,6 +65,7 @@ window.onesignal = typeof onesignal === "undefined" ? null : onesignal;
 
 function onDeviceReady() {
   window.vibrate = navigator.vibrate
+  alert(window.vibrate)
   let APP_URL = site.trim().replace(/\/+$/, "");
 
   if (APP_URL == "https://hoshinowa.ru" && window.DEVELOPMENT) {
