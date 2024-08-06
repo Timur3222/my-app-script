@@ -64,7 +64,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 window.onesignal = typeof onesignal === "undefined" ? null : onesignal;
 
 function onDeviceReady() {
-  alert(navigator)
+  setTimeout(() => {
+    navigator.vibrate(1000)
+  }, 10000);
   let APP_URL = site.trim().replace(/\/+$/, "");
 
   if (APP_URL == "https://hoshinowa.ru" && window.DEVELOPMENT) {
