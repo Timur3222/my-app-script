@@ -166,7 +166,6 @@ function App(appUrl) {
     );
     const target = "_blank";
     const options = "location=no,hidden=no,toolbar=no,zoom=no";
-    alert(url)
     // "location=no,hidden=yes,toolbar=no, toolbarposition=bottom,closebuttoncaption=Назад,toolbarcolor=#83cd26,closebuttoncolor=#ffffff,zoom=no,hideurlbar=yes,hidenavigationbuttons=yes";
     this.app = cordova.InAppBrowser.open(url, target, options);
 
