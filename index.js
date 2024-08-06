@@ -167,7 +167,6 @@ function App(appUrl) {
     const target = "_blank";
     const options = "location=no,hidden=no,toolbar=no,zoom=no";
     // "location=no,hidden=yes,toolbar=no, toolbarposition=bottom,closebuttoncaption=Назад,toolbarcolor=#83cd26,closebuttoncolor=#ffffff,zoom=no,hideurlbar=yes,hidenavigationbuttons=yes";
-    alert(url);
     this.app = cordova.InAppBrowser.open(url, target, options);
 
     return new Promise((resolve, reject) => {
@@ -346,6 +345,7 @@ function App(appUrl) {
       data.notification?.additionalData?.external_link;
 
     if (externalLink) {
+      alert(externalLink)
       this.app = cordova.InAppBrowser.open(externalLink, "_system");
       this.appEvents();
     }
