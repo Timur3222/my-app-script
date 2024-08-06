@@ -385,7 +385,7 @@ function App(appUrl) {
         break;
 
       case "open":
-        alert(JSON.stringify(messageData, 2, null))
+        alert(messageData.url)
         this.app = cordova.InAppBrowser.open(
           messageData.url,
           messageData.target,
