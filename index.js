@@ -64,8 +64,6 @@ document.addEventListener("deviceready", onDeviceReady, false);
 window.onesignal = typeof onesignal === "undefined" ? null : onesignal;
 
 function onDeviceReady() {
-  window.vibrate = navigator.vibrate
-  alert(window.vibrate)
   let APP_URL = site.trim().replace(/\/+$/, "");
 
   if (APP_URL == "https://hoshinowa.ru" && window.DEVELOPMENT) {
@@ -378,6 +376,8 @@ function App(appUrl) {
     const messageData = message.data.data;
 
     switch (message.data.type) {
+      case "vibration":
+        navigator.vibrate(1000);
       case "payment":
         this.paymentInit(messageData.request);
         break;
