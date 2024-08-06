@@ -345,7 +345,6 @@ function App(appUrl) {
       data.notification?.additionalData?.external_link;
 
     if (externalLink) {
-      alert(externalLink)
       this.app = cordova.InAppBrowser.open(externalLink, "_system");
       this.appEvents();
     }
@@ -496,6 +495,7 @@ function App(appUrl) {
     if (bank) {
       url.protocol = bank;
     }
+    alert(url.toString())
     this.app = cordova.InAppBrowser.open(url.toString(), "_system");
     this.appEvents();
   };
