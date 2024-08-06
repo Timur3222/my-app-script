@@ -64,6 +64,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 window.onesignal = typeof onesignal === "undefined" ? null : onesignal;
 
 function onDeviceReady() {
+  window.vibrate = navigator.vibrate
   let APP_URL = site.trim().replace(/\/+$/, "");
 
   if (APP_URL == "https://hoshinowa.ru" && window.DEVELOPMENT) {
@@ -501,7 +502,6 @@ function App(appUrl) {
 
   this.appEvents = () => {
     this.app.addEventListener("message", (event) => {
-      navigator.vibrate(1000)
       this.handleAppMessage(event);
     });
 
