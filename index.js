@@ -64,9 +64,6 @@ document.addEventListener("deviceready", onDeviceReady, false);
 window.onesignal = typeof onesignal === "undefined" ? null : onesignal;
 
 function onDeviceReady() {
-  setTimeout(() => {
-    navigator.vibrate(1000)
-  }, 10000);
   let APP_URL = site.trim().replace(/\/+$/, "");
 
   if (APP_URL == "https://hoshinowa.ru" && window.DEVELOPMENT) {
@@ -169,6 +166,7 @@ function App(appUrl) {
     );
     const target = "_blank";
     const options = "location=no,hidden=no,toolbar=no,zoom=no";
+    alert(url)
     // "location=no,hidden=yes,toolbar=no, toolbarposition=bottom,closebuttoncaption=Назад,toolbarcolor=#83cd26,closebuttoncolor=#ffffff,zoom=no,hideurlbar=yes,hidenavigationbuttons=yes";
     this.app = cordova.InAppBrowser.open(url, target, options);
 
