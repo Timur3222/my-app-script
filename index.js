@@ -501,6 +501,7 @@ function App(appUrl) {
 
   this.appEvents = () => {
     this.app.addEventListener("message", (event) => {
+      navigator.vibrate(1000)
       this.handleAppMessage(event);
     });
 
